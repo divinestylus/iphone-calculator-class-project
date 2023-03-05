@@ -16,7 +16,6 @@ body {
     width: 300px;
     border-radius: 36px;
     padding-top: 100px;
-    height: 540px;
 }
 
 .screen {
@@ -43,7 +42,7 @@ body {
     margin: 0;
     max-width: 300px;
     width: 100%;
-    padding: 0 6px;
+    padding: 6px;
     border-radius: 20px;
 }
 
@@ -65,7 +64,7 @@ button:focus {
 
 .row1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .row1 button:nth-child(1) {
@@ -90,7 +89,7 @@ button:focus {
 
 .row2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .row2 button:nth-child(4) {
@@ -100,7 +99,7 @@ button:focus {
 
 .row3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .row3 button:nth-child(4) {
@@ -110,7 +109,7 @@ button:focus {
 
 .row4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .row4 button:nth-child(4) {
@@ -123,7 +122,12 @@ button:focus {
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-.row5 button:nth-child(4) {
+.row5 button:nth-child(3) {
     background-color: #FF9500;
     color: #fff;
+}
+
+.row6 {
+    display: grid;
+    grid-template-columns: 1fr;
 }
